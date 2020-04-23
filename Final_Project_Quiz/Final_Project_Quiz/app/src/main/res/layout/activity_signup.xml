@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="Sign Up"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#FFEB3B"
+        android:fontFamily="@font/caveat_bold"
+        android:layout_marginTop="50px"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name: "
+        android:textColor="#fff"
+        android:fontFamily="@font/caveat_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewSignUp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/editTextNewName"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="90px" />
+
+    <EditText
+        android:id="@+id/editTextNewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@id/textViewName"
+        app:layout_constraintBottom_toBottomOf="@id/textViewName"
+        app:layout_constraintLeft_toRightOf="@id/textViewName"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30px"
+        android:textSize="25sp"
+        android:textColor="#00000A"/>
+
+    <TextView
+        android:id="@+id/textViewPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        android:textColor="#fff"
+        android:fontFamily="@font/caveat_bold"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextNewName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/editTextNewPsw"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="90px" />
+
+    <EditText
+        android:id="@+id/editTextNewPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@id/textViewPsw"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPsw"
+        app:layout_constraintLeft_toRightOf="@id/textViewPsw"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30px"
+        android:textSize="25sp"
+        android:textColor="#00000A"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="600px"
+        android:padding="10px"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:background="@drawable/custom_buttons"
+        android:fontFamily="@font/caveat_bold"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

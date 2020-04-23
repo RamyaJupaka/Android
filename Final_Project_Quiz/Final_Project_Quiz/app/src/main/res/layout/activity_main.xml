@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to I-Quiz"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#F7DE0B"
+        android:fontFamily="@font/caveat_bold"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Play"
+        android:textSize="50sp"
+        android:fontFamily="@font/caveat_bold"
+        app:layout_constraintLeft_toLeftOf="@id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        android:layout_marginLeft="50dp"
+        android:textColor="#0E0C02"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType=""
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        app:layout_constraintLeft_toLeftOf="@id/textViewName"
+        app:layout_constraintRight_toRightOf="@id/textViewName"
+        android:layout_marginTop="30dp"
+        android:hint="Name "
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editTextPsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        app:layout_constraintStart_toStartOf="@id/editTextName"
+        app:layout_constraintEnd_toEndOf="@id/editTextName"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/caveat_bold"
+        android:text="START"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttonRegister"
+        android:background="@drawable/custom_buttons" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="SignUp"
+        app:layout_constraintTop_toTopOf="@id/buttonStart"
+        app:layout_constraintLeft_toRightOf="@id/buttonStart"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:background="@drawable/custom_buttons"
+        android:fontFamily="@font/caveat_bold"
+        android:layout_marginLeft="5dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
