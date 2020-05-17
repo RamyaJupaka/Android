@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateEmployee">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Employee"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#673AB7"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Name"
+                android:textSize="30dp"
+                android:fontFamily="@font/condiment"/>
+
+            <EditText
+                android:id="@+id/AddEmployeeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Employee-Type"
+                android:fontFamily="@font/condiment"
+                android:textSize="30sp"/>
+
+            <Spinner
+                android:id="@+id/DropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/specialityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Specialty"
+                android:fontFamily="@font/condiment"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/AddSpeciality300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Salary"
+                android:fontFamily="@font/condiment"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/AddEmployeeSalary300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Email Address"
+                android:fontFamily="@font/condiment"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/AddEmployeeEmail300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/condiment"
+                android:text="Password"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/AddEmployeePassword300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/AddNewEmployeeButton300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Employee" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

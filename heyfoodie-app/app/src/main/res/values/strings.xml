@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HeyFoodie</string>
+    <string name="caption">Food is our common ground, a universal experience. </string>
+
+    <string-array name="employee_type">
+        <item>Waiter</item>
+        <item>Chef</item>
+        <item>Head Chef</item>
+        <item>Hall Manager</item>
+    </string-array>
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+    <string name="promptEmployee">Select Employee Type</string>
+</resources>

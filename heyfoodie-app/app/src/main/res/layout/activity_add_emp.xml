@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEmp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Employee"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Name"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/AddEmployeeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Employee Type"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/AddEmpType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType=""
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!--<Spinner
+                android:id="@+id/DropDownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/employee_type"
+
+                android:spinnerMode="dialog">
+
+            </Spinner>-->
+
+            <TextView
+                android:id="@+id/specialityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:enabled="false"
+                android:text="Specialty"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/AddSpeciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Salary"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/AddEmployeeSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Email Address"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/AddEmployeeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Password"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/AddEmployeePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/AddNewEmployeeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Employee"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
