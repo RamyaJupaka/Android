@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textViewN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Name is : "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"/>
+
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="@id/textViewN"
+        app:layout_constraintBottom_toBottomOf="@id/textViewN"
+        app:layout_constraintTop_toTopOf="@id/textViewN"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textColor="#F03B3B" />
+
+    <TextView
+        android:id="@+id/textViewS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Sport \n Preference is "
+        app:layout_constraintTop_toBottomOf="@id/textViewN"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+         />
+
+    <TextView
+        android:id="@+id/textViewSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/textViewS"
+        app:layout_constraintBottom_toBottomOf="@id/textViewS"
+        app:layout_constraintLeft_toRightOf="@id/textViewS"
+        app:layout_constraintStart_toStartOf="@id/textViewName"
+        android:textSize="30sp"
+        android:textColor="#E03B3B"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
