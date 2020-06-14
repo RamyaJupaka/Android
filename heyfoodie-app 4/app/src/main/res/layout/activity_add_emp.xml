@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEmp"
+    android:background="@drawable/pastry">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Employee"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#F5F8F2"
+                android:fontFamily="@font/josefin_slab_semibold_italic"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Name"
+                android:textColor="#F4F6F2"
+                android:fontFamily="@font/josefin_slab_semibold_italic"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/AddEmployeeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#F4F6F2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="EmployeeID"
+                android:textColor="#F2F4EF"
+                android:fontFamily="@font/josefin_slab_semibold_italic"
+                android:textSize="20sp"
+                android:textStyle="bold"
+             ></TextView>
+            <EditText
+
+                android:id="@+id/AddEmpId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#F4F6F2"
+
+                >
+
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Employee Type"
+                android:textColor="#F2F4F0"
+                android:fontFamily="@font/josefin_slab_semibold_italic"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/AddEmpType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType=""
+                android:textColor="#F4F6F2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+           <!-- <Spinner
+                android:id="@+id/employeeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/employee_type"
+
+                android:spinnerMode="dialog">
+
+            </Spinner>-->
+
+           <!-- <TextView
+                android:id="@+id/specialityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:enabled="false"
+                android:text="Specialty"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/bilbo_swash_caps"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/AddSpeciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Salary"
+                android:textColor="#FCFFFA"
+                android:fontFamily="@font/josefin_slab_semibold_italic"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/AddEmployeeSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="#F4F6F2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Email Address"
+                android:textColor="#F8FBF4"
+                android:fontFamily="@font/josefin_slab_semibold_italic"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/AddEmployeeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="#F4F6F2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Password"
+                android:textColor="#F8FAF6"
+                android:fontFamily="@font/josefin_slab_semibold_italic"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/AddEmployeePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="#F4F6F2"
+                />
+
+            <Button
+                android:id="@+id/AddNewEmployeeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Employee"
+                android:background="@drawable/custombuttons"
+                android:textColor="#1B1C1A"
+                android:fontFamily="@font/josefin_slab_semibold_italic"
+                android:textSize="30sp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

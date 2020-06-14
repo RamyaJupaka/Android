@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HeyFoodie</string>
+    <string name="caption">Food is our common ground, a universal experience. </string>
+
+    <string-array name="status">
+        <item>select status</item>
+        <item>Free</item>
+        <item>Booked</item>
+        <item>Occupied</item>
+    </string-array>
+
+
+</resources>

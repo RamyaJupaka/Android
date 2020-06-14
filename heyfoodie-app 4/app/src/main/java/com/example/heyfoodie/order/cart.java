@@ -1,0 +1,32 @@
+package com.example.heyfoodie.order;
+//Cart class defines skeleton of cart in db .It contains dishName that was ordered and its quantity
+public class cart {
+
+    String addedname;
+    int quantity;
+
+    public cart(){
+
+    }
+
+    public cart(String addedname, int Quantity) {
+        this.addedname = addedname;
+        this.quantity = Quantity;
+    }
+
+    public String getAddedname() {
+        return addedname;
+    }
+
+    public void setAddedname(String addedname) {
+        this.addedname = addedname;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+       this.quantity = quantity;
+    }
+}

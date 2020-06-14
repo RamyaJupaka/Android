@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1022576445698",
+    "firebase_url": "https://foodie-dcfde.firebaseio.com",
+    "project_id": "foodie-dcfde",
+    "storage_bucket": "foodie-dcfde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022576445698:android:d76da4ec8867f6953d5a1b",
+        "android_client_info": {
+          "package_name": "com.example.eatit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022576445698-s09j99evob8gn7n45bf5t03mt45js7ss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoHwbP7niKkgq7BCORdKOYgp8SZ6S2zpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022576445698-s09j99evob8gn7n45bf5t03mt45js7ss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022576445698:android:bfbcd37bca36d61b3d5a1b",
+        "android_client_info": {
+          "package_name": "com.example.heyfoodie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022576445698-s09j99evob8gn7n45bf5t03mt45js7ss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoHwbP7niKkgq7BCORdKOYgp8SZ6S2zpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022576445698-s09j99evob8gn7n45bf5t03mt45js7ss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
